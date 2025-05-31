@@ -1,0 +1,5 @@
+DirectoryIndex index.php
+ErrorDocument 400 https://gashainstitute.great-site.net/400.php
+ErrorDocument 401 https://gashainstitute.great-site.net/401.php
+ErrorDocument 403 https://gashainstitute.great-site.net/403.php
+ErrorDocument 404 https://gashainstitute.great-site.net/404.php

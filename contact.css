@@ -1,0 +1,111 @@
+header {
+    background: #ede8f5;
+    padding: 50px 0;
+}
+
+.header-container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+header h2 {
+    color: #adbbda;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Contact Cards Layout */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%;
+    min-width: 280px;
+}
+
+/* Contact Form */
+.contact-form-card {
+    flex: 1 1 60%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #8697c4;
+    border-radius: 5px;
+    width: 100%;
+    background: #f8f8fc;
+}
+
+.contact-form button {
+    background: #3d52a0;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #7091e6;
+}
+
+/* Contact Info */
+.contact-info-card {
+    background: #adbbda;
+    flex: 1 1 30%;
+    text-align: left;
+}
+
+.contact-info-card h3 {
+    color: #3d52a0;
+    margin-bottom: 10px;
+}
+
+.contact-info-card p {
+    margin: 5px 0;
+}
+
+/* Map */
+.map-card {
+    flex: 1 1 100%;
+}
+
+.map-card iframe {
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede8f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #3d52a0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Job Listings Section */
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.job-card {
+    background-color: #adbbda;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.job-card h2 {
+    color: #3d52a0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    color: #3d52a0;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.apply-btn {
+    background-color: #7091e6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #3d52a0;
+}
+

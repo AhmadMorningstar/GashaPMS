@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede8f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+.search-fields {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure inputs stack on smaller screens */
+}
+
+.search-fields input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Ensure spacing between inputs on mobile */
+}
+
+.search-fields button {
+    padding: 10px 20px;
+    background-color: #3d52a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Spacing between buttons on mobile */
+}
+
+.search-fields button:hover {
+    background-color: #7091e6;
+}
+
+.applications-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.application-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: left;
+    flex-wrap: wrap; /* Ensure the cards stack on mobile */
+}
+
+.user-card, .event-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #adbbda;
+    min-width: 300px;
+    margin-bottom: 10px; /* Add space between user and event cards on mobile */
+}
+
+.user-card h2, .event-card h2 {
+    color: #3d52a0;
+    border-bottom: 2px solid #3d52a0;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .search-fields {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-fields input {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .search-fields button {
+        width: 100%; /* Full width for the button */
+        margin-top: 10px;
+    }
+
+    .application-card {
+        flex-direction: column; /* Stack user and event cards vertically */
+    }
+
+    .user-card, .event-card {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-fields input {
+        font-size: 14px; /* Adjust input text size on very small screens */
+    }
+
+    .search-fields button {
+        font-size: 14px; /* Adjust button text size */
+    }
+}

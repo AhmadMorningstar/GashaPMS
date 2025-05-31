@@ -1,0 +1,120 @@
+/* panel.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede8f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3d52a0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header .nav-container nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .nav-container nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header .nav-container nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2, .card h3 {
+    color: #3d52a0;
+}
+
+.toggle-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.toggle-buttons button {
+    background-color: #7091e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.toggle-buttons button:hover {
+    background-color: #3d52a0;
+}
+
+.view-container {
+    display: none;
+    margin: 20px;
+}
+
+.application-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.application-card .user-card, .application-card .job-card {
+    width: 48%;
+}
+
+.user-card, .job-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #3d52a0;
+    color: white;
+}
+
+table td {
+    background-color: #fff;
+}
+
+button {
+    background-color: #8697c4;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3d52a0;
+}
